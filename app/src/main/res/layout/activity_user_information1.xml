@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kusitms7team.aos.UserInformation1Activity">
+
+    <!-- 메뉴바 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/main_white"
+            android:font="@font/pretendardsemibold"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textColor="@color/main_Black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="413dp"
+            android:layout_height="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText"
+            app:srcCompat="@drawable/ic_title_line" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="421dp"
+        android:layout_height="675dp"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/textNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:font="@font/pretendardmedium"
+            android:text="닉네임을 입력하세요. (10자 이내)"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/imgOverlap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/textNick"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_check_overlap_enable" />
+
+        <EditText
+            android:id="@+id/enterNick"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#ECECEC"
+            android:hint="닉네임 입력"
+            android:font="@font/pretendardmedium"
+            android:maxLength="10"
+            android:textColor="@color/main_Black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNick"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textIntroduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:font="@font/pretendardmedium"
+            android:text="한 줄 소개를 입력하세요. (30자 이내)"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterNick" />
+
+        <EditText
+            android:id="@+id/enterIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#ECECEC"
+            android:font="@font/pretendardmedium"
+            android:hint="한 줄 소개 입력"
+            android:maxLength="30"
+            android:textColor="@color/main_Black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textIntroduction"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textProfileImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:font="@font/pretendardmedium"
+            android:text="원하는 프로필 사진을 고르세요."
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterIntroduction" />
+
+        <ImageButton
+            android:id="@+id/btnImg1"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/btnImg2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProfileImg"
+            app:srcCompat="@drawable/ic_profile1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnImg2"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/btnImg3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnImg1"
+            app:layout_constraintTop_toBottomOf="@+id/textProfileImg"
+            app:srcCompat="@drawable/ic_profile2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnImg3"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/btnImg4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnImg2"
+            app:layout_constraintTop_toBottomOf="@+id/textProfileImg"
+            app:srcCompat="@drawable/ic_profile3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnImg4"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/btnImg5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnImg3"
+            app:layout_constraintTop_toBottomOf="@+id/textProfileImg"
+            app:srcCompat="@drawable/ic_profile4"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnImg5"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnImg4"
+            app:layout_constraintTop_toBottomOf="@+id/textProfileImg"
+            app:srcCompat="@drawable/ic_profile5"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:background="@color/main_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/btn_next_enabled"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnNicknameErase"
+            android:layout_width="13dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/main_white"
+            app:layout_constraintBottom_toBottomOf="@+id/enterNick"
+            app:layout_constraintEnd_toEndOf="@+id/enterNick"
+            app:layout_constraintTop_toTopOf="@+id/enterNick"
+            app:srcCompat="@drawable/btn_text_erase"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnIntroductionErase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:background="@color/main_white"
+            app:layout_constraintBottom_toBottomOf="@+id/enterIntroduction"
+            app:layout_constraintEnd_toEndOf="@+id/enterIntroduction"
+            app:layout_constraintTop_toTopOf="@+id/enterIntroduction"
+            app:srcCompat="@drawable/btn_text_erase"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
