@@ -47,6 +47,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:font="@font/pretendardmedium"
         android:text="과 함께 더 나은 경제 생활에 "
         android:textColor="#000000"
@@ -54,12 +55,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/login_flo_logo_iv" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="31dp"
         android:layout_height="23dp"
+        android:layout_marginTop="52dp"
         android:font="@font/pretendardmedium"
         android:text="티끌"
         android:textColor="@color/main_Orange"
@@ -67,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.297"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/login_flo_logo_iv" />
 
     <TextView
         android:id="@+id/textView3"
