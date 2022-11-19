@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_bottom_home_no_select"
+        android:title="1"/>
+
+    <item
+        android:id="@+id/action_empty"
+        android:title=""
+        android:enabled="false"
+        android:checkable="false"/>
+
+    <item
+        android:id="@+id/action_menu"
+        android:icon="@drawable/ic_bottom_home_no_select"
+        android:title="2"/>
+</menu>

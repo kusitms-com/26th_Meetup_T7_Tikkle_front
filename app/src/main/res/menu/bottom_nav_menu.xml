@@ -16,9 +16,11 @@
         android:title="피드" />
     <item
         android:id="@+id/consumptionreviewFragment"
-        android:icon="@drawable/ic_bottom_consumptionreview_no_select"
-        app:showAsAction="always"
-        android:title="" />
+        android:title=""
+        android:enabled="false"
+        android:checkable="false"
+        />
+
     <item
         android:id="@+id/challengeFragment"
         android:icon="@drawable/ic_bottom_challenge_no_select"
