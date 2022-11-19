@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_bottom_home_no_select"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="홈"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/ic_bottom_feed_no_select"
+        app:showAsAction="always"
+        android:title="피드" />
+    <item
+        android:id="@+id/consumptionreviewFragment"
+        android:icon="@drawable/ic_bottom_consumptionreview_no_select"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/challengeFragment"
+        android:icon="@drawable/ic_bottom_challenge_no_select"
+        app:showAsAction="always"
+        android:title="챌린지" />
+    <item
+        android:id="@+id/mypageFragment"
+        android:icon="@drawable/ic_bottom_mypage_no_select"
+        app:showAsAction="always"
+        android:title="마이페이지" />
+
+</menu>
