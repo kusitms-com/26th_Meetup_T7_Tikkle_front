@@ -12,5 +12,6 @@ interface APIS {
         @Path("id") id : Int,
         @Body request : extraInfoBody
     ): Call<extraInfoRes>
+    /* 머지용 */
 
 }
