@@ -63,17 +63,17 @@
 
     <com.kusitms7team.aos.CustomBottomNavigationView
         android:id="@+id/main_bnv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="421dp"
+        android:layout_height="74dp"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="10dp"
         android:background="#FFFF00"
         android:backgroundTint="#FFFF00"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp"
         app:menu="@menu/bottom_nav_menu">
 
     </com.kusitms7team.aos.CustomBottomNavigationView>
@@ -82,7 +82,7 @@
         android:id="@+id/popup_button"
         android:layout_width="62dp"
         android:layout_height="63dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="25dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:src="@drawable/ic_bottom_consumptionreview"
