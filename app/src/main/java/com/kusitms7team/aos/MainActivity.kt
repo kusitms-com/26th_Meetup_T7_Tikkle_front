@@ -12,6 +12,5 @@ class MainActivity : AppCompatActivity() {
 //        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 //        main_bnv1.inflateMenu(R.menu.bottom_navigation)
-        /* commit용 */
     }
 }

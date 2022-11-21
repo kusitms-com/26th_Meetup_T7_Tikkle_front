@@ -20,7 +20,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
             android:font="@font/pretendardsemibold"
             android:text="오늘도 알찬 하루를 보내고 계신가요?"
@@ -33,7 +33,7 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:font="@font/pretendardsemibold"
             android:text="2022년 11월 11일"
@@ -43,9 +43,30 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/btn_challenge"
+            android:layout_width="87dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/btn_challenge"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/btn_consumption_review"
+            android:layout_width="87dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/btn_consumption_review"
+            app:layout_constraintStart_toEndOf="@+id/btn_challenge"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
             android:id="@+id/ic_day_change"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="87dp"
+            android:layout_height="44dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="4dp"
             android:src="@drawable/ic_day_change"
