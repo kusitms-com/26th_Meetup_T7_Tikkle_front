@@ -48,18 +48,18 @@
             android:layout_height="44dp"
             android:layout_marginStart="12dp"
             android:layout_marginTop="4dp"
-            android:src="@drawable/btn_challenge"
+            android:src="@drawable/btn_challenge_noselect"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <ImageView
-            android:id="@+id/btn_consumption_review"
+            android:id="@+id/btn_consumption_select"
             android:layout_width="87dp"
             android:layout_height="44dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
-            android:src="@drawable/btn_consumption_review"
+            android:src="@drawable/btn_consumption_select"
             app:layout_constraintStart_toEndOf="@+id/btn_challenge"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -85,18 +85,6 @@
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/sun"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/callender_border"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/sat"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/mon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -106,7 +94,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.387"></androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/tue"
@@ -118,19 +106,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/mon"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/wed"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/callender_border"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/thu"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/tue"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.387"></androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/thu"
@@ -142,7 +118,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/wed"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.387"></androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/fri"
@@ -154,7 +130,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/thu"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.387"></androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/sat"
@@ -166,7 +142,45 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/fri"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.387"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sun"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sat"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.387"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/thu"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.387"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textmon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:font="@font/pretendardmedium"
+                android:text="월"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/mon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/texttue"
@@ -180,7 +194,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/tue"
                 app:layout_constraintStart_toEndOf="@+id/textmon"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.464" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textwed"
@@ -194,7 +208,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/wed"
                 app:layout_constraintStart_toEndOf="@+id/texttue"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.464" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textthu"
@@ -208,7 +222,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/thu"
                 app:layout_constraintStart_toEndOf="@+id/textwed"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.464" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textfri"
@@ -222,7 +236,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/fri"
                 app:layout_constraintStart_toEndOf="@+id/textthu"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.464" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textsat"
@@ -236,7 +250,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/sat"
                 app:layout_constraintStart_toEndOf="@+id/textfri"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.464" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/textsun"
@@ -251,21 +265,7 @@
                 app:layout_constraintHorizontal_bias="0.61"
                 app:layout_constraintStart_toEndOf="@+id/textsat"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.464" />
-
-            <TextView
-                android:id="@+id/textmon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:font="@font/pretendardmedium"
-                android:text="월"
-                android:textColor="@color/main_Black"
-                android:textSize="13sp"
-                app:layout_constraintBottom_toTopOf="@+id/mon"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.464" />
+                app:layout_constraintVertical_bias="1.0" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
