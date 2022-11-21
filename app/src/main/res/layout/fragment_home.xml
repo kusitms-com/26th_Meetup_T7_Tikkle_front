@@ -17,19 +17,11 @@
         app:layout_constraintTop_toBottomOf="parent">
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:font="@font/pretendardsemibold"
-            android:text="2022년 11월 11일"
-            android:textColor="@color/main_Black"
-            android:textSize="17sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
             android:font="@font/pretendardsemibold"
             android:text="오늘도 알찬 하루를 보내고 계신가요?"
             android:textColor="@color/main_Black"
@@ -37,8 +29,229 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:font="@font/pretendardsemibold"
+            android:text="2022년 11월 11일"
+            android:textColor="@color/main_Black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ic_day_change"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_day_change"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/beach_container"
+            android:layout_width="355dp"
+            android:layout_height="102dp"
+            android:background="@drawable/edittext_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_day_change">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sun"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sat"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wed"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/mon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/thu"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/thu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/fri"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/wed"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fri"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sat"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/thu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callender_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sun"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/fri"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/texttue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:font="@font/pretendardmedium"
+                android:text="화"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/tue"
+                app:layout_constraintStart_toEndOf="@+id/textmon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464" />
+
+            <TextView
+                android:id="@+id/textwed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:font="@font/pretendardmedium"
+                android:text="수"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/wed"
+                app:layout_constraintStart_toEndOf="@+id/texttue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464" />
+
+            <TextView
+                android:id="@+id/textthu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:font="@font/pretendardmedium"
+                android:text="목"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/thu"
+                app:layout_constraintStart_toEndOf="@+id/textwed"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464" />
+
+            <TextView
+                android:id="@+id/textfri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:font="@font/pretendardmedium"
+                android:text="금"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/fri"
+                app:layout_constraintStart_toEndOf="@+id/textthu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464" />
+
+            <TextView
+                android:id="@+id/textsat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:font="@font/pretendardmedium"
+                android:text="토"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/sat"
+                app:layout_constraintStart_toEndOf="@+id/textfri"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464" />
+
+            <TextView
+                android:id="@+id/textsun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:font="@font/pretendardmedium"
+                android:text="일"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/sun"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.61"
+                app:layout_constraintStart_toEndOf="@+id/textsat"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464" />
+
+            <TextView
+                android:id="@+id/textmon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:font="@font/pretendardmedium"
+                android:text="월"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/mon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.464" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </FrameLayout>
