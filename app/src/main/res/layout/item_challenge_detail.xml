@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ItenUnabledChallengeItem"
+        android:layout_width="99dp"
+        android:layout_height="140dp"
+        tools:context=".UnabledChallengeItem"
+        android:background="@drawable/bg_item_challenge_enabled_border">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="95dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_item_border"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_ex"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
