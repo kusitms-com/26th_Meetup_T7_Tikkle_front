@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="15dp"
             android:font="@font/pretendardsemibold"
             android:text="2022년 11월 11일"
             android:textColor="@color/main_Black"
@@ -371,7 +371,7 @@
             android:id="@+id/add_emotion"
             android:layout_width="44dp"
             android:layout_height="44dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/dotted_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
@@ -407,7 +407,7 @@
             android:id="@+id/constraintLayout3"
             android:layout_width="335dp"
             android:layout_height="52dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -415,8 +415,8 @@
 
             <ImageView
                 android:id="@+id/face1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:src="@drawable/icn_consume_remind_face_icon_1"
                 app:layout_constraintEnd_toStartOf="@+id/face2"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -425,8 +425,8 @@
 
             <ImageView
                 android:id="@+id/face2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:src="@drawable/icn_consume_remind_face_icon_2"
                 app:layout_constraintEnd_toStartOf="@+id/face3"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -435,8 +435,8 @@
 
             <ImageView
                 android:id="@+id/face3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:src="@drawable/icn_consume_remind_face_icon_3"
                 app:layout_constraintEnd_toStartOf="@+id/face4"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -445,8 +445,8 @@
 
             <ImageView
                 android:id="@+id/face4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:src="@drawable/icn_consume_remind_face_icon_4"
                 app:layout_constraintEnd_toStartOf="@+id/face5"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -455,8 +455,8 @@
 
             <ImageView
                 android:id="@+id/face5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:src="@drawable/icn_consume_remind_face_icon_5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -544,18 +544,44 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="28dp"
             android:font="@font/pretendardsemibold"
-            android:text="2022년 11월 11일의 회고"
+            android:text="2022년 11월 11일"
             android:textColor="@color/main_Black"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:font="@font/pretendardsemibold"
+            android:text="의 회고"
+            android:textColor="@color/main_Black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
         <FrameLayout
+            android:id="@+id/frameLayout"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:layout_constraintStart_toStartOf="@id/textView13"
-            tools:layout_editor_absoluteY="431dp" />
+            android:layout_height="192dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

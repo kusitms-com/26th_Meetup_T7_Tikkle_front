@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/button_background_tikkle_color.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/callender_border.xml" value="0.1835" />
         <entry key="app/src/main/res/drawable/dotted_border.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/edittext_border.xml" value="0.2035" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
         <entry key="app/src/main/res/drawable/main_btm_consumptionreview_selector.xml" value="0.1185" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3024734497070312" />
@@ -21,7 +22,7 @@
         <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.26510416666666664" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.48660125732421877" />
         <entry key="app/src/main/res/layout/fragment_home_challenge.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.4129570373500693" />
+        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.3412628173828125" />
         <entry key="app/src/main/res/layout/sample_splash_animation.xml" value="0.20104166666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.4032258064516129" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.16979166666666667" />

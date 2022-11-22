@@ -9,6 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
         android:paddingLeft="27dp"
         android:paddingRight="27dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,11 +73,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/beach_container"
-            android:layout_width="334dp"
-            android:layout_height="93dp"
+            android:layout_width="355dp"
+            android:layout_height="102dp"
             android:background="@drawable/edittext_border"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.089"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ic_day_change">
 
