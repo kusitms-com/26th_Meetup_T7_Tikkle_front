@@ -28,7 +28,7 @@ class HomeConsumptionReviewFragment : Fragment() {
             container,
             false
         )
-
+        //calendar
         val today: String? = doDayOfWeek()
 
         return binding.root
@@ -92,39 +92,39 @@ class HomeConsumptionReviewFragment : Fragment() {
         val nWeek: Int = cal.get(Calendar.DAY_OF_WEEK)
         if (nWeek == 1) {
             strWeek = "일"
-            binding.sun.setBackgroundColor(Color.parseColor("#F56508"))
+            binding.sun.setBackgroundResource(R.drawable.calendar_select_border)
             binding.textsun.setTextColor(Color.parseColor("#F56508"))
             binding.daysun.setTextColor(Color.parseColor("#F56508"))
         } else if (nWeek == 2) {
             strWeek = "월"
-            binding.mon.setBackgroundColor(Color.parseColor("#F56508"))
+            binding.mon.setBackgroundResource(R.drawable.calendar_select_border)
             binding.textmon.setTextColor(Color.parseColor("#F56508"))
             binding.daymon.setTextColor(Color.parseColor("#F56508"))
         } else if (nWeek == 3) {
             strWeek = "화"
-            binding.tue.setBackgroundColor(Color.parseColor("#F56508"))
+            binding.tue.setBackgroundResource(R.drawable.calendar_select_border)
             binding.texttue.setTextColor(Color.parseColor("#F56508"))
             binding.daytue.setTextColor(Color.parseColor("#F56508"))
         } else if (nWeek == 4) {
             strWeek = "수"
-            binding.wed.setBackgroundColor(Color.parseColor("#F56508"))
+            binding.wed.setBackgroundResource(R.drawable.calendar_select_border)
             binding.textwed.setTextColor(Color.parseColor("#F56508"))
             binding.daywed.setTextColor(Color.parseColor("#F56508"))
 
         } else if (nWeek == 5) {
             strWeek = "목"
-            binding.thu.setBackgroundColor(Color.parseColor("#F56508"))
+            binding.thu.setBackgroundResource(R.drawable.calendar_select_border)
             binding.textthu.setTextColor(Color.parseColor("#F56508"))
             binding.daythu.setTextColor(Color.parseColor("#F56508"))
         } else if (nWeek == 6
         ) {
             strWeek = "금"
-            binding.fri.setBackgroundColor(Color.parseColor("#F56508"))
+            binding.fri.setBackgroundResource(R.drawable.calendar_select_border)
             binding.textfri.setTextColor(Color.parseColor("#F56508"))
             binding.dayfri.setTextColor(Color.parseColor("#F56508"))
         } else if (nWeek == 7) {
             strWeek = "토"
-            binding.sat.setBackgroundColor(Color.parseColor("#F56508"))
+            binding.sat.setBackgroundResource(R.drawable.calendar_select_border)
             binding.textsat.setTextColor(Color.parseColor("#F56508"))
             binding.daysat.setTextColor(Color.parseColor("#F56508"))
         }
