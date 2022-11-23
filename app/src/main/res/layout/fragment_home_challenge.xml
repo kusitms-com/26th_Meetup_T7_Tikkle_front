@@ -9,7 +9,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
         android:paddingLeft="27dp"
         android:paddingRight="27dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,23 +16,21 @@
         app:layout_constraintTop_toBottomOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:font="@font/pretendardsemibold"
             android:text="오늘도 알찬 하루를 보내고 계신가요?"
             android:textColor="@color/main_Black"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/textMainDate" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textMainDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:font="@font/pretendardsemibold"
             android:text="2022년 11월 11일"
@@ -46,12 +43,11 @@
             android:id="@+id/btn_challenge"
             android:layout_width="87dp"
             android:layout_height="44dp"
-            android:layout_marginStart="12dp"
             android:layout_marginTop="4dp"
             android:src="@drawable/btn_challenge"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toBottomOf="@+id/text" />
 
         <ImageView
             android:id="@+id/btn_consumption_review"
@@ -61,7 +57,7 @@
             android:layout_marginTop="4dp"
             android:src="@drawable/btn_consumption_review"
             app:layout_constraintStart_toEndOf="@+id/btn_challenge"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toBottomOf="@+id/text" />
 
 
         <ImageView
@@ -72,15 +68,15 @@
             android:layout_marginEnd="4dp"
             android:src="@drawable/ic_day_change"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toBottomOf="@+id/text" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/beach_container"
-            android:layout_width="355dp"
-            android:layout_height="102dp"
+            android:layout_width="334dp"
+            android:layout_height="93dp"
             android:background="@drawable/edittext_border"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ic_day_change">
 
@@ -95,7 +91,23 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/sat"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.741">
+
+                <TextView
+                    android:id="@+id/sunDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:font="@font/pretendardsemibold"
+                    android:gravity="center"
+                    android:text="11/13"
+                    android:textColor="#AB4A0B"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/mon"
@@ -107,7 +119,23 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.741">
+
+                <TextView
+                    android:id="@+id/monDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:font="@font/pretendardsemibold"
+                    android:gravity="center"
+                    android:text="11/07"
+                    android:textColor="#AB4A0B"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/tue"
@@ -119,7 +147,23 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/mon"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.741">
+
+                <TextView
+                    android:id="@+id/tueDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:font="@font/pretendardsemibold"
+                    android:gravity="center"
+                    android:text="11/08"
+                    android:textColor="#AB4A0B"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/wed"
@@ -131,7 +175,23 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/tue"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.741">
+
+                <TextView
+                    android:id="@+id/wedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:font="@font/pretendardsemibold"
+                    android:gravity="center"
+                    android:text="11/09"
+                    android:textColor="#AB4A0B"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/thu"
@@ -143,7 +203,23 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/wed"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.741">
+
+                <TextView
+                    android:id="@+id/thuDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:font="@font/pretendardsemibold"
+                    android:gravity="center"
+                    android:text="11/10"
+                    android:textColor="#AB4A0B"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/fri"
@@ -155,7 +231,23 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/thu"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.741">
+
+                <TextView
+                    android:id="@+id/friDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:font="@font/pretendardsemibold"
+                    android:gravity="center"
+                    android:text="11/11"
+                    android:textColor="#AB4A0B"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/sat"
@@ -167,7 +259,23 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/fri"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.741"></androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintVertical_bias="0.741">
+
+                <TextView
+                    android:id="@+id/satDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:font="@font/pretendardsemibold"
+                    android:gravity="center"
+                    android:text="11/12"
+                    android:textColor="#AB4A0B"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/texttue"
@@ -268,10 +376,172 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.464" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:font="@font/pretendardsemibold"
+            android:text="오늘의 챌린지 참여 현황"
+            android:textColor="@color/main_Black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beach_container" />
+
+        <TextView
+            android:id="@+id/textChallenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:font="@font/pretendardsemibold"
+            android:text="오늘의 챌린지 참여 현황"
+            android:textColor="@color/main_Black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beach_container"/>
+
+        <TextView
+            android:id="@+id/textChallengeCount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="총 "
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textChallenge"/>
+
+        <TextView
+            android:id="@+id/textChallengeCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="0"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textChallengeCount1"
+            app:layout_constraintTop_toBottomOf="@+id/textChallenge" />
+
+        <TextView
+            android:id="@+id/textChallengeCount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="개의 챌린지 중 "
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textChallengeCount2"
+            app:layout_constraintTop_toBottomOf="@+id/textChallenge" />
+
+        <TextView
+            android:id="@+id/textChallengeCount4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="0"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textChallengeCount3"
+            app:layout_constraintTop_toBottomOf="@+id/textChallenge" />
+
+        <TextView
+            android:id="@+id/textChallengeCount5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="개를 수행하셨네요!"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textChallengeCount4"
+            app:layout_constraintTop_toBottomOf="@+id/textChallenge" />
+
+        <FrameLayout
+            android:id="@+id/challengeList"
+            android:layout_width="319dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textChallengeCount5">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textChallengeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:font="@font/pretendardsemibold"
+            android:text="소비 방어 챌린지"
+            android:textColor="@color/main_Black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/challengeList"/>
+
+        <TextView
+            android:id="@+id/textChallengeDetailCount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="총 "
+            android:textColor="@color/main_Gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textChallengeDetail"/>
+
+        <TextView
+            android:id="@+id/textChallengeDetailCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="100"
+            android:textColor="@color/main_Gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textChallengeDetailCount1"
+            app:layout_constraintTop_toBottomOf="@+id/textChallengeDetail" />
+
+        <TextView
+            android:id="@+id/textChallengeDetailCount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardsemibold"
+            android:text="개의 글"
+            android:textColor="@color/main_Gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textChallengeDetailCount2"
+            app:layout_constraintTop_toBottomOf="@+id/textChallengeDetail" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerHorizon"
+            android:layout_width="99dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textChallengeDetailCount1"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:listitem="@layout/item_challenge_detail" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>

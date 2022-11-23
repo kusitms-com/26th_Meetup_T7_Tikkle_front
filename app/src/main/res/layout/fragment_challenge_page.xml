@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChallemgeProve1Fragment">
+    tools:context=".ChallengePageFragment">
 
     <!-- 메뉴바 -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,34 +15,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="30dp"
+        <ImageView
+            android:id="@+id/icLogo"
+            android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
             android:background="@color/main_white"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_tikkle_logo_2"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageButton
+            android:id="@+id/icBell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@color/main_white"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/btn_close"
+            app:srcCompat="@drawable/btn_above_navigation_bell_unactivated"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/titleText"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/main_white"
-            android:font="@font/pretendardsemibold"
-            android:gravity="center"
-            android:text="챌린지 인증"
-            android:textColor="@color/main_Black"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -52,9 +49,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleText"
+            app:layout_constraintTop_toBottomOf="@+id/icLogo"
             app:srcCompat="@drawable/ic_title_line" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,41 +65,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-        <ImageView
-            android:id="@+id/imoge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="48dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icn_camera" />
 
         <TextView
             android:id="@+id/textNick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="50dp"
-            android:font="@font/pretendardmedium"
-            android:text="어떤 챌린지를 인증하시겠어요?"
+            android:layout_marginTop="44dp"
+            android:font="@font/pretendardsemibold"
+            android:text="챌린지"
             android:textColor="@color/main_Black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/imoge"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/textNick2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:font="@font/pretendardmedium"
+            android:text="더 많은 챌린지를 탐색 해보세요!"
+            android:textColor="@color/main_Black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNick" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/challengeName1"
+            android:id="@+id/layoutConsumption"
             android:layout_width="355dp"
             android:layout_height="59dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_item_challenge_enabled_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textNick">
+            app:layout_constraintTop_toBottomOf="@+id/textNick2">
 
             <ImageView
-                android:id="@+id/emoge2"
+                android:id="@+id/emogetitleConsumption"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="30dp"
@@ -113,15 +111,16 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/titleConsumption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:fontFamily="@font/pretendardmedium"
-                android:text="소비 방어 챌린지"
+                android:text="소비/지출"
                 android:textColor="@color/main_Black"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/emoge2"
+                app:layout_constraintStart_toEndOf="@+id/emogetitleConsumption"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
@@ -139,35 +138,36 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/challengeName2"
+            android:id="@+id/layoutSaving"
             android:layout_width="355dp"
             android:layout_height="59dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/bg_item_challenge_enabled_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/challengeName1">
+            app:layout_constraintTop_toBottomOf="@+id/layoutConsumption">
 
             <ImageView
-                android:id="@+id/emoge3"
+                android:id="@+id/emogeSaving"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="30dp"
-                android:src="@drawable/ic_pencil"
+                android:src="@drawable/ic_saving"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/titleSaving"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:fontFamily="@font/pretendardmedium"
-                android:text="금융 지식 챌린지"
+                android:text="저축"
                 android:textColor="@color/main_Black"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/emoge3"
+                app:layout_constraintStart_toEndOf="@+id/emogeSaving"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
@@ -185,39 +185,134 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/challengeName3"
+            android:id="@+id/layoutStudy"
             android:layout_width="355dp"
             android:layout_height="59dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/bg_item_challenge_enabled_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/challengeName2">
+            app:layout_constraintTop_toBottomOf="@+id/layoutSaving">
 
             <ImageView
-                android:id="@+id/emoge4"
+                android:id="@+id/emogeStudy"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="30dp"
-                android:src="@drawable/ic_newspaper"
+                android:src="@drawable/ic_pencil"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/titleStudy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:fontFamily="@font/pretendardmedium"
-                android:text="뉴스레터 공부 챌린지"
+                android:text="공부 / 지식"
                 android:textColor="@color/main_Black"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/emoge4"
+                app:layout_constraintStart_toEndOf="@+id/emogeStudy"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/btnNewspaperNext"
+                android:id="@+id/btnStudyNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/main_white"
+                android:src="@drawable/btn_go_to_next_step"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutInvestment"
+            android:layout_width="355dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_item_challenge_enabled_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutStudy">
+
+            <ImageView
+                android:id="@+id/emogeInvestment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_investment"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleInvestment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/pretendardmedium"
+                android:text="투자"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/emogeInvestment"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnInvestmentNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/main_white"
+                android:src="@drawable/btn_go_to_next_step"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutEtc"
+            android:layout_width="355dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_item_challenge_enabled_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutInvestment">
+
+            <ImageView
+                android:id="@+id/emogeEtc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_etc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleEtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/pretendardmedium"
+                android:text="기타"
+                android:textColor="@color/main_Black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/emogeEtc"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnEtcNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
