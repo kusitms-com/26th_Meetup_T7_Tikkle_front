@@ -6,13 +6,16 @@
         <entry key="../../../layout/custom_preview.xml" value="0.329412841796875" />
         <entry key="app/src/main/res/drawable-v24/bg_callendar_border.xml" value="0.1835" />
         <entry key="app/src/main/res/drawable-v24/bg_userinformation_border.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2035" />
         <entry key="app/src/main/res/drawable/btm_color_selector.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/btm_consumptionreview_selct.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_background_tikkle_color.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/callender_border.xml" value="0.1835" />
         <entry key="app/src/main/res/drawable/dotted_border.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/dotted_line.xml" value="0.2035" />
         <entry key="app/src/main/res/drawable/edittext_border.xml" value="0.2035" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable/layout_border.xml" value="0.2035" />
         <entry key="app/src/main/res/drawable/main_btm_consumptionreview_selector.xml" value="0.1185" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3024734497070312" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.32591461181640624" />
@@ -22,7 +25,9 @@
         <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.26510416666666664" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.48660125732421877" />
         <entry key="app/src/main/res/layout/fragment_home_challenge.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.3412628173828125" />
+        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.29710235595703127" />
+        <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/item_challenge_detail.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/sample_splash_animation.xml" value="0.20104166666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.4032258064516129" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.16979166666666667" />
@@ -35,5 +40,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>
