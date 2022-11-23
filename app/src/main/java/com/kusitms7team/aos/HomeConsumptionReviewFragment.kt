@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import com.kusitms7team.aos.databinding.FragmentHomeConsumptionReviewBinding
 import java.text.SimpleDateFormat
@@ -30,6 +31,37 @@ class HomeConsumptionReviewFragment : Fragment() {
         )
         //calendar
         val today: String? = doDayOfWeek()
+
+        var Emotion: Int? = 0
+
+        //Emotion setting
+        binding.choiceFace.visibility = View.INVISIBLE
+
+        binding.face1.setOnClickListener {
+            binding.choiceFace.setImageResource(R.drawable.icn_consume_remind_face_icon_1)
+            binding.choiceFace.visibility = View.VISIBLE
+            Emotion = 1
+        }
+        binding.face2.setOnClickListener {
+            binding.choiceFace.setImageResource(R.drawable.icn_consume_remind_face_icon_2)
+            binding.choiceFace.visibility = View.VISIBLE
+            Emotion = 2
+        }
+        binding.face3.setOnClickListener {
+            binding.choiceFace.setImageResource(R.drawable.icn_consume_remind_face_icon_3)
+            binding.choiceFace.visibility = View.VISIBLE
+            Emotion = 3
+        }
+        binding.face4.setOnClickListener {
+            binding.choiceFace.setImageResource(R.drawable.icn_consume_remind_face_icon_4)
+            binding.choiceFace.visibility = View.VISIBLE
+            Emotion = 4
+        }
+        binding.face5.setOnClickListener {
+            binding.choiceFace.setImageResource(R.drawable.icn_consume_remind_face_icon_5)
+            binding.choiceFace.visibility = View.VISIBLE
+            Emotion = 5
+        }
 
         return binding.root
     }
@@ -84,8 +116,8 @@ class HomeConsumptionReviewFragment : Fragment() {
         val month = (cal.get(Calendar.MONTH) + 1).toString()
         val day = cal.get(Calendar.DATE).toString()
         Log.d(TAG, "DailyMenuActivity - onCreate is called ${year}-${month}-${day}")
-        binding.textdate.setText(year + "년" + month + "월" + day + "일")
-        binding.textdate1.setText(year + "년" + month + "월" + day + "일")
+        binding.textdate.setText(year + "년 " + month + "월 " + day + "일")
+        binding.textdate1.setText(year + "년 " + month + "월 " + day + "일 ")
 
 
         var strWeek: String? = null

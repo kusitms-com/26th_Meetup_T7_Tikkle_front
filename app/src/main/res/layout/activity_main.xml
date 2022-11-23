@@ -2,94 +2,85 @@
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
 
-        <!-- 메뉴바 -->
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
 
-            <ImageView
-                android:id="@+id/icLogo"
-                android:layout_width="50dp"
+            <FrameLayout
+                android:id="@+id/main_frm"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@color/main_white"
-                android:scaleType="centerInside"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="74dp"
+                app:layout_constraintBottom_toTopOf="@+id/consumptionreview"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_tikkle_logo_2"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                app:layout_constraintVertical_bias="0.0" />
 
-            <ImageButton
-                android:id="@+id/icBell"
-                android:layout_width="wrap_content"
+            <FrameLayout
+                android:id="@+id/layout_bottom"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:background="@color/main_white"
-                android:scaleType="centerInside"
-                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+            <com.kusitms7team.aos.CustomBottomNavigationView
+                android:id="@+id/main_bnv"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_gravity="bottom"
+                app:labelVisibilityMode="labeled"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/btn_above_navigation_bell_unactivated"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                app:layout_constraintVertical_bias="1.0"
+                app:menu="@menu/bottom_nav_menu">
+            </com.kusitms7team.aos.CustomBottomNavigationView>
+            </FrameLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_bottom_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:focusable="true"
+                android:translationZ="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/consumptionreview"
+                app:layout_constraintEnd_toEndOf="@+id/consumptionreview"
+                app:layout_constraintStart_toStartOf="@+id/consumptionreview"
+                app:layout_constraintTop_toTopOf="@+id/consumptionreview" />
+            </LinearLayout>
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="413dp"
-                android:layout_height="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/consumptionreview"
+                android:layout_width="62dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_bottom_consumptionreview"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_bottom"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/icLogo"
-                app:srcCompat="@drawable/ic_title_line" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintStart_toStartOf="parent" />
 
-        <FrameLayout
-            android:id="@+id/main_frm"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="55dp"
-            app:layout_constraintBottom_toTopOf="@+id/main_bnv"
-            app:layout_constraintStart_toStartOf="@+id/main_bnv"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
 
-        <com.kusitms7team.aos.CustomBottomNavigationView
-            android:id="@+id/main_bnv"
-            android:layout_width="421dp"
-            android:layout_height="74dp"
-            android:layout_gravity="bottom"
-            app:labelVisibilityMode="labeled"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:menu="@menu/bottom_nav_menu">
-        </com.kusitms7team.aos.CustomBottomNavigationView>
-
-        <ImageView
-            android:id="@+id/consumptionreview"
-            android:layout_width="62dp"
-            android:layout_height="63dp"
-            android:layout_marginBottom="25dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_bottom_consumptionreview"
-            app:layout_constraintBottom_toBottomOf="@+id/main_bnv"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

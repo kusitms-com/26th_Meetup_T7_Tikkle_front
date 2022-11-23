@@ -58,7 +58,7 @@ dependencies {
     implementation 'me.relex:circleindicator:2.1.4'
 
     //카카오
-    implementation "com.kakao.sdk:v2-user:2.9.0" // 카카오 로그인
+    implementation "com.kakao.sdk:v2-user:2.11.2" // 카카오 로그인
     implementation "com.kakao.sdk:v2-talk:2.9.0" // 친구, 메시지(카카오톡)
     implementation "com.kakao.sdk:v2-navi:2.9.0" // 카카오내비
 }
