@@ -13,6 +13,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        //Home Activity Navigation 초기화면 설정
+        supportFragmentManager.beginTransaction().add(R.id.main_frm,
+            HomeConsumptionReviewFragment()
+        ).commit()
 
         //Home Activity Navigation
         binding.mainBnv.setOnItemSelectedListener{ item ->
