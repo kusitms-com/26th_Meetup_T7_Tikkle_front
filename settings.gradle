@@ -4,6 +4,7 @@ pluginManagement {
         google()
         maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
         mavenCentral()
+        jcenter()
 
     }
 }
@@ -13,6 +14,7 @@ dependencyResolutionManagement {
         google()
         maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
         mavenCentral()
+        jcenter()
     }
 }
 rootProject.name = "Tikkle"
