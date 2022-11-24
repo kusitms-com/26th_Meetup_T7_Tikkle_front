@@ -1,8 +1,10 @@
 package com.kusitms7team.aos
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 
 class UserInformation5Activity : AppCompatActivity() {
@@ -25,6 +27,7 @@ class UserInformation5Activity : AppCompatActivity() {
         btnNext.setOnClickListener{
 
             /* intent에 유저 정보 담아서 home으로 */
+            val intent = Intent(this, MainActivity::class.java)
 
             finish()
             startActivity(intent)

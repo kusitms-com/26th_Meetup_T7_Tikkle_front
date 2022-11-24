@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         val sideAnimation = AnimationUtils.loadAnimation(this,R.anim.anim_splash_textview)
         backgroundImg.startAnimation(sideAnimation)
         Handler().postDelayed({
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,LoginActivity::class.java))
             finish()
         },3000)
 

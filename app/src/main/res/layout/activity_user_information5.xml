@@ -57,7 +57,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="421dp"
+        android:layout_width="412dp"
         android:layout_height="675dp"
         android:paddingLeft="27dp"
         android:paddingRight="27dp"
