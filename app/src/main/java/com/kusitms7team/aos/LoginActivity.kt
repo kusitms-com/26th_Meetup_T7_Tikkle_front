@@ -16,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        /*
         // 로그인 정보 확인
         UserApiClient.instance.accessTokenInfo { tokenInfo, error ->
             if (error != null) {
@@ -74,10 +75,14 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-
+        */
         val kakao_login_iv = findViewById<ImageView>(R.id.kakao_login_iv) // 로그인 버튼
-
         kakao_login_iv.setOnClickListener {
+            val intent = Intent(this, UserInformation1Activity::class.java)
+            finish()
+            startActivity(intent)
+            }
+            /*
             if(UserApiClient.instance.isKakaoTalkLoginAvailable(this)){
                 UserApiClient.instance.loginWithKakaoTalk(this, callback = callback)
 
@@ -85,6 +90,6 @@ class LoginActivity : AppCompatActivity() {
             }else{
                 UserApiClient.instance.loginWithKakaoTalk(this, callback = callback)
             }
-        }
+        }*/
     }
 }
