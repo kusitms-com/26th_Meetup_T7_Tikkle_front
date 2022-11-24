@@ -16,6 +16,7 @@ import java.util.*
 
 class HomeConsumptionReviewFragment : Fragment() {
     lateinit var binding: FragmentHomeConsumptionReviewBinding
+    lateinit var mainActivity: MainActivity
     val cal = Calendar.getInstance()
 
     override fun onCreateView(
@@ -29,6 +30,7 @@ class HomeConsumptionReviewFragment : Fragment() {
             container,
             false
         )
+        mainActivity = context as MainActivity
         //calendar
         val today: String? = doDayOfWeek()
 
@@ -63,8 +65,63 @@ class HomeConsumptionReviewFragment : Fragment() {
             Emotion = 5
         }
 
+        var tag: Int? = 0
+        //Review setting
+        binding.review1.visibility = View.INVISIBLE
+        binding.review2.visibility = View.INVISIBLE
+
+        binding.tag1.setOnClickListener {
+            binding.review1.setImageResource(R.drawable.ic_tag1)
+            binding.review1.visibility = View.VISIBLE
+            tag = 1
+        }
+        binding.tag2.setOnClickListener {
+            binding.review1.setImageResource(R.drawable.ic_tag2)
+            binding.review1.visibility = View.VISIBLE
+            tag = 2
+        }
+        binding.tag3.setOnClickListener {
+            binding.review1.setImageResource(R.drawable.ic_tag3)
+            binding.review1.visibility = View.VISIBLE
+            tag = 3
+        }
+        binding.tag4.setOnClickListener {
+            binding.review1.setImageResource(R.drawable.ic_tag4)
+            binding.review1.visibility = View.VISIBLE
+            tag = 4
+        }
+        binding.tag5.setOnClickListener {
+            binding.review1.setImageResource(R.drawable.ic_tag5)
+            binding.review1.visibility = View.VISIBLE
+            tag = 5
+        }
+        binding.tag6.setOnClickListener {
+            binding.review2.setImageResource(R.drawable.ic_tag6)
+            binding.review2.visibility = View.VISIBLE
+            tag = 6
+        }
+        binding.tag7.setOnClickListener {
+            binding.review2.setImageResource(R.drawable.ic_tag7)
+            binding.review2.visibility = View.VISIBLE
+            tag = 7
+        }
+        binding.tag8.setOnClickListener {
+            binding.review2.setImageResource(R.drawable.ic_tag8)
+            binding.review2.visibility = View.VISIBLE
+            tag = 8
+        }
+        binding.tag9.setOnClickListener {
+            binding.review2.setImageResource(R.drawable.ic_tag9)
+            binding.review2.visibility = View.VISIBLE
+            tag = 9
+        }
+
+
+
         return binding.root
     }
+
+
 
 
     private fun doDayOfWeek(): String? {
@@ -177,5 +234,17 @@ class HomeConsumptionReviewFragment : Fragment() {
         val day = dayFormat.format(date)
         return day
     }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        with (binding) {
+            //버튼을 누르면 SecondFragment로 이동
+            binding.btnChallenge.setOnClickListener {
+                    mainActivity.moveToHomeChallenge()
+            }
+        }
+    }
+
 }
 
