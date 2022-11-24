@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.homeFragment -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, HomeConsumptionReviewFragment())
+                        .replace(R.id.main_frm, HomeChallengeFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.challengeFragment -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, ChallengeFragment())
+                        .replace(R.id.main_frm, HomeChallengeFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
@@ -59,6 +59,18 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+    }
+
+    fun moveToHomeChallenge() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.main_frm, HomeChallengeFragment())
+            .commitAllowingStateLoss()
+    }
+
+    fun moveToHomeComsumptionReview() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.main_frm, HomeConsumptionReviewFragment())
+            .commitAllowingStateLoss()
     }
 
     //로그인 후 뒤로가기 막기

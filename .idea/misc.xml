@@ -10,7 +10,9 @@
         <entry key="app/src/main/res/drawable/btm_color_selector.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/btm_consumptionreview_selct.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_background_tikkle_color.xml" value="0.161" />
+        <entry key="app/src/main/res/drawable/calendar_border1.xml" value="0.208" />
         <entry key="app/src/main/res/drawable/calendar_select_border.xml" value="0.1725" />
+        <entry key="app/src/main/res/drawable/calendar_select_border1.xml" value="0.208" />
         <entry key="app/src/main/res/drawable/calender_border.xml" value="0.1735" />
         <entry key="app/src/main/res/drawable/callender_border.xml" value="0.1835" />
         <entry key="app/src/main/res/drawable/callender_select _border.xml" value="0.123" />
@@ -27,6 +29,7 @@
         <entry key="app/src/main/res/layout/activity_user_information2.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_user_information3.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_user_information5.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_banner.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_challemge_prove1.xml" value="0.3463789447399709" />
         <entry key="app/src/main/res/layout/fragment_challemge_prove2.xml" value="0.1890625" />
         <entry key="app/src/main/res/layout/fragment_challemge_prove3.xml" value="0.37817535400390623" />
@@ -34,16 +37,19 @@
         <entry key="app/src/main/res/layout/fragment_challenge_consumption.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_challenge_consumption_detail.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_challenge_detail.xml" value="0.35161895751953126" />
+        <entry key="app/src/main/res/layout/fragment_challenge_page.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.3172037760416667" />
         <entry key="app/src/main/res/layout/fragment_feed_item.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.48660125732421877" />
-        <entry key="app/src/main/res/layout/fragment_home_challenge.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.3778122575640031" />
+        <entry key="app/src/main/res/layout/fragment_home_challenge.xml" value="0.3700653076171875" />
+        <entry key="app/src/main/res/layout/fragment_home_consumption_review.xml" value="0.11039892748587815" />
         <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/item_challenge.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/item_challenge_detail.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/item_challenge_detail_list.xml" value="0.1890625" />
-        <entry key="app/src/main/res/layout/item_enabled_challenge.xml" value="0.1890625" />
-        <entry key="app/src/main/res/layout/item_unabled_challenge.xml" value="0.1890625" />
+        <entry key="app/src/main/res/layout/item_challenge_list.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/item_enabled_challenge.xml" value="0.32137298583984375" />
+        <entry key="app/src/main/res/layout/item_unabled_challenge.xml" value="0.8637725830078126" />
         <entry key="app/src/main/res/layout/sample_splash_animation.xml" value="0.20104166666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.4032258064516129" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.16979166666666667" />
